@@ -57,7 +57,7 @@ while game_running:
             print("Well too bad because you're entering the room anyway.\n")
             room = 'start'
     if room == 'start':
-        print("In front of you lies a large gate, and three different doors, each in a different color, them being red, blue, and black.")
+        print("In front of you lies a large gate, and three different doors, each in a different color, them being red, blue, and black. Once you are in a room you can type 'exit' to leave the room and come back at any time.")
         answer = input("Where will you go first?\nPlease type '1' for the Gate, '2' for the Red Door, '3' for the Blue Door, and '4' for the Black Door: ")
         if answer == '1':
             room = 'gate'
@@ -85,6 +85,8 @@ while game_running:
                 red_solves += 1
                 solves += 1
                 print("Correct!")
+            elif answer == 'exit':
+                room =  'start'
             else:
                 print("Incorrect!")
         if red_solves == 1:
@@ -94,6 +96,8 @@ while game_running:
                 red_solves += 1
                 solves += 1
                 print("Correct!")
+            elif answer == 'exit':
+                room =  'start'
             else:
                 print("Incorrect!")
         if red_solves == 2:
@@ -103,6 +107,8 @@ while game_running:
                 red_solves += 1
                 solves += 1
                 print("Correct!")
+            elif answer == 'exit':
+                room =  'start'
             else:
                 print("Incorrect!")
         if red_solves == 3:
@@ -117,6 +123,8 @@ while game_running:
                 blue_solves += 1
                 solves += 1
                 print("Correct!")
+            elif answer == 'exit':
+                room =  'start'
             else:
                 print("Incorrect!")
         if blue_solves == 1:
@@ -126,6 +134,8 @@ while game_running:
                 blue_solves += 1
                 solves += 1
                 print("Correct!")
+            elif answer == 'exit':
+                room =  'start'
             else:
                 print("Incorrect!")
         if blue_solves == 2:
@@ -135,6 +145,8 @@ while game_running:
                 blue_solves += 1
                 solves += 1
                 print("Correct!")
+            elif answer == 'exit':
+                room =  'start'
             else:
                 print("Incorrect!")
         if blue_solves == 3:
@@ -149,6 +161,8 @@ while game_running:
                 black_solves += 1
                 solves += 1
                 print("Correct!")
+            elif answer == 'exit':
+                room =  'start'
             else:
                 print("Incorrect!")
         if black_solves == 1:
@@ -158,6 +172,8 @@ while game_running:
                 black_solves += 1
                 solves += 1
                 print("Correct!")
+            elif answer == 'exit':
+                room =  'start'
             else:
                 print("Incorrect!")
         if black_solves == 2:
@@ -167,6 +183,8 @@ while game_running:
                 black_solves += 1
                 solves += 1
                 print("Correct!")
+            elif answer == 'exit':
+                room =  'start'
             else:
                 print("Incorrect!")
         if black_solves == 3:
